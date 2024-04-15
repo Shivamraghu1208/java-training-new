@@ -12,9 +12,9 @@ public class FindChocolates {
             temp = chocolates;
 
             while (temp >= wrapper) {
-                remainingwrapper = temp % wrapper; //0+2
-                temp = temp / wrapper;  //5 1
-                chocolates = chocolates + temp;//15+5+1
+                remainingwrapper = temp % wrapper;
+                temp = temp / wrapper;
+                chocolates = chocolates + temp;
                 temp = temp + remainingwrapper;
 
             }
