@@ -6,7 +6,7 @@ public class FindChocolates {
         int chocolates;
         int temp;
         int remainingwrapper;
-
+//s
         if(cost>=1) {
             chocolates = rupees / cost;
             temp = chocolates;
