@@ -11,6 +11,7 @@ public class MoveZeroToEnd {
             }
         }
 //new line
+        //one more new line
         if (j == -1)
             System.out.println("Zero not present");
         else {
