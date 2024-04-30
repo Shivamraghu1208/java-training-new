@@ -2,8 +2,6 @@ name: Print README of Another Repository
 
 on:
   push:
-    branches:
-      - main
 
 jobs:
   print_readme:
