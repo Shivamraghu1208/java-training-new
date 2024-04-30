@@ -1,21 +1,23 @@
 name: Print README of Another Repository
-
+env:
+  MAIN_REPO: https://${{secrets.USER_NAME}}:${{secrets.ACCESS_TOKEN}}@github.com/Shivamraghu1208/git-traning.git
+  MAIN_BRANCH: main
 on:
   push:
 
 jobs:
   print_readme:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        
+
       - name: Fetch README content
         run: |
-          readme_content=$(curl -H "Authorization: token PAT_TOKEN" \
-                               -H "Accept: application/vnd.github.v3.raw" \
-                               https://api.github.com/repos/Shivamraghu1208/git-traning/readme)
+          git clone -b ${MAIN_BRANCH} ${MAIN_REPO} ${MAIN_BRANCH}
+          cat main/README.md
+          cat main/git-traning/README.md
+          cat README.md
+          cat git-traning/README.md
 
-                            
-          echo "$readme_content"
