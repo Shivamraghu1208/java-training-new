@@ -17,8 +17,5 @@ jobs:
         run: |
           git clone -b ${MAIN_BRANCH} ${MAIN_REPO} ${MAIN_BRANCH}
           ls
-#          cat main/README.md
-#          cat main/git-traning/README.md
-#          cat README.md
-#          cat git-traning/README.md
+          cat main/README.md
 
