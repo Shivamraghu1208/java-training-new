@@ -14,7 +14,7 @@ jobs:
       - name: Clone Repository
       
         run: |
-          git clone -b main https://${{secrets.USER_NAME}}:${{secrets.ACCESS_TOKEN}}@github.com/Shivamraghu1208/.git main
+          git clone -b main https://${{secrets.USER_NAME}}:${{secrets.ACCESS_TOKEN}}@github.com/Shivamraghu1208/java-training-new.git main
           ls
           cat main/README.md
        
