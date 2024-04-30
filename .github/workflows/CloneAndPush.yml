@@ -1,8 +1,7 @@
 name: Clone and Push Repository
 
 on:
-  workflow_dispatch:  # Manually trigger the workflow
-  # Add other triggers as needed (e.g., push, schedule, etc.)
+  [push]
 
 jobs:
   clone_and_push:
