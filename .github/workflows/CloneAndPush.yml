@@ -1,0 +1,20 @@
+name: Clone and Push Repository
+
+on:
+  workflow_dispatch:  # Manually trigger the workflow
+  # Add other triggers as needed (e.g., push, schedule, etc.)
+
+jobs:
+  clone_and_push:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
+      - name: Clone Repository
+        run: |
+          git clone https://github.com/OWNER/OLD-REPO.git cloned-repo
+          cd cloned-repo
+          git remote set-url origin https://github.com/OWNER/NEW-REPO.git
+          git push origin main  # Push to the main branch of the new repository
