@@ -13,8 +13,9 @@ jobs:
         uses: actions/checkout@v2
         
       - name: Clone Repository
+      
         run: |
-          git clone https://github.com/OWNER/OLD-REPO.git cloned-repo
-          cd cloned-repo
-          git remote set-url origin https://github.com/OWNER/NEW-REPO.git
-          git push origin main  # Push to the main branch of the new repository
+          git clone -b main https://${{secrets.USER_NAME}}:${{secrets.ACCESS_TOKEN}}@github.com/Shivamraghu1208/.git main
+          ls
+          cat main/README.md
+       
