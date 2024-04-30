@@ -15,5 +15,5 @@ jobs:
         run: |
           readme_content=$(curl -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
                                -H "Accept: application/vnd.github.v3.raw" \
-                               https://api.github.com/repos/OWNER/REPO/readme)
+                               https://api.github.com/repos/Shivamraghu1208/git-traning/readme)
           echo "$readme_content"
