@@ -15,7 +15,7 @@ jobs:
 
       - name: Fetch README content
         run: |
-          git clone -b ${MAIN_BRANCH} ${MAIN_REPO} ${MAIN_BRANCH}
+          git clone -b main https://${{secrets.USER_NAME}}:${{secrets.ACCESS_TOKEN}}@github.com/Shivamraghu1208/git-traning.git main
           ls
           cat main/README.md
 
