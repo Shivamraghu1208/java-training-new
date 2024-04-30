@@ -1,0 +1,21 @@
+name: Print README of Another Repository
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  print_readme:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
+      - name: Fetch README content
+        run: |
+          readme_content=$(curl -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
+                               -H "Accept: application/vnd.github.v3.raw" \
+                               https://api.github.com/repos/OWNER/REPO/readme)
+          echo "$readme_content"
