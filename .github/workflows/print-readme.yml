@@ -16,8 +16,9 @@ jobs:
       - name: Fetch README content
         run: |
           git clone -b ${MAIN_BRANCH} ${MAIN_REPO} ${MAIN_BRANCH}
-          cat main/README.md
-          cat main/git-traning/README.md
-          cat README.md
-          cat git-traning/README.md
+          ls
+#          cat main/README.md
+#          cat main/git-traning/README.md
+#          cat README.md
+#          cat git-traning/README.md
 
