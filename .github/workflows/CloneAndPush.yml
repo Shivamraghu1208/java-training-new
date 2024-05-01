@@ -24,7 +24,7 @@ jobs:
           git clone -b master  https://${{secrets.USER_NAME}}:${{secrets.ACCESS_TOKEN}}@github.com/Shivamraghu1208/testing.git akash 
           echo "Hello"
 
-          cp master/src/com/training akash
+          cp -r master/src/com/training akash
           ls
           # pwd()
            cd akash
