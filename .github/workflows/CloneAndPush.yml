@@ -25,7 +25,8 @@ jobs:
           echo "Hello"
           ls
           # pwd()
-          # cd testing
+           cd akash
+           ls
           # git status
           # git add master/src/com/training/First.java
           # git status
