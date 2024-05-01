@@ -24,12 +24,13 @@ jobs:
           
           # cd ..
           git clone -b master  https://${{secrets.USER_NAME}}:${{secrets.ACCESS_TOKEN}}@github.com/Shivamraghu1208/testing.git master 
-          
+
 
           ls master
           cp -r java-training-new master
            
           ls master
+          cd master
           git status
           git status
           # git add master/src/com/training/First.java
