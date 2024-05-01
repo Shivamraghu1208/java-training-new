@@ -24,7 +24,7 @@ jobs:
           git clone -b master  https://${{secrets.USER_NAME}}:${{secrets.ACCESS_TOKEN}}@github.com/Shivamraghu1208/testing.git akash 
           echo "Hello"
           ls
-          pwd()
+          # pwd()
           # cd testing
           # git status
           # git add master/src/com/training/First.java
