@@ -30,7 +30,6 @@ jobs:
           cp -r java-training-new master
            
           ls master
-	  cd master
           git status
           # git add master/src/com/training/First.java
           # git status
