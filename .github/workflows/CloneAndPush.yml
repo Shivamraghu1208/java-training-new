@@ -19,7 +19,7 @@ jobs:
           git clone -b master https://${{secrets.USER_NAME}}:${{secrets.ACCESS_TOKEN}}@github.com/Shivamraghu1208/java-training-new.git master
           ls
           cat master/src/com/training/First.java
-          git clone -b main  https://${{secrets.USER_NAME}}:${{secrets.ACCESS_TOKEN}}@github.com/Shivamraghu1208/testing.git 
+          git clone -b main  https://${{secrets.USER_NAME}}:${{secrets.ACCESS_TOKEN}}@github.com/Shivamraghu1208/testing.git main
           ls
             
        
