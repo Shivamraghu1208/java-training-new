@@ -1,7 +1,7 @@
 name: Clone and Push Repository
 env:
   MAIN_REPO: https://${{secrets.USER_NAME}}:${{secrets.ACCESS_TOKEN}}@github.com/Shivamraghu1208/git-traning.git
-  MAIN_BRANCH: main
+  MAIN_BRANCH: master
 on:
   [push]
 
@@ -16,7 +16,7 @@ jobs:
       - name: Clone Repository
       
         run: |
-          git clone -b main https://${{secrets.USER_NAME}}:${{secrets.ACCESS_TOKEN}}@github.com/Shivamraghu1208/java-training-new.git master
+          git clone -b master https://${{secrets.USER_NAME}}:${{secrets.ACCESS_TOKEN}}@github.com/Shivamraghu1208/java-training-new.git master
           ls
           cat master/README.md
        
