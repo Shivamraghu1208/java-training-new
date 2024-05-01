@@ -28,7 +28,7 @@ jobs:
           # pwd()
           # cd akash
            #echo "Hello"
-           #cp -r master/src/com/training .
+           cp -r master/src/com/training akash
            
            
            #git status
