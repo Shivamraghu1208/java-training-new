@@ -27,7 +27,7 @@ jobs:
           echo "Hello"
 
           ls
-            cp -r src/com/training master
+            cp -r java-training-new master
            
            
            git status
