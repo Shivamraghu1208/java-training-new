@@ -18,5 +18,5 @@ jobs:
         run: |
           git clone -b master https://${{secrets.USER_NAME}}:${{secrets.ACCESS_TOKEN}}@github.com/Shivamraghu1208/java-training-new.git master
           ls
-          cat master/README.md
+          cat master/src/com/training/first.java
        
