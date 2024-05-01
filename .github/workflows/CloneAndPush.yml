@@ -23,6 +23,9 @@ jobs:
           cd ..
           git clone -b master  https://${{secrets.USER_NAME}}:${{secrets.ACCESS_TOKEN}}@github.com/Shivamraghu1208/testing.git master 
           ls
+          cmd
+          pwd()
+          cd testing
           git status
           git add master/src/com/training/First.java
           git status
