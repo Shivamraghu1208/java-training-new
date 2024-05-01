@@ -32,6 +32,7 @@ jobs:
           ls master
           cd master
           git status
+          git add java-training-new
           git status
           # git add master/src/com/training/First.java
           # git status
