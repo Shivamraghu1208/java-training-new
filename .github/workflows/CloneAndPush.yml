@@ -29,6 +29,7 @@ jobs:
           ls master
           rm -rf java-training-new/.git
           rm -rf java-training-new/.github
+          rm -rf master/java-training-new
           mv java-training-new master
            
           ls master
