@@ -33,6 +33,8 @@ jobs:
           cd master
           git status
           git add java-training-new
+          git config --global user.email "shivam.raghuwanshi@aurx.co"
+          git config --global user.name "shivam"
           git commit -m "adding file javatrainingnew"
           git push origin master
           git status
