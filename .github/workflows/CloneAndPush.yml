@@ -27,7 +27,7 @@ jobs:
 
 
           ls master
-          cp -Rf java-training-new master
+          mv java-training-new master
            
           ls master
           cd master
