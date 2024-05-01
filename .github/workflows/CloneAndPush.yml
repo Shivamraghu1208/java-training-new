@@ -28,10 +28,10 @@ jobs:
           # pwd()
            cd akash
            echo "Hello"
-          cp -r master/src/com/training akash
+          # cp -r master/src/com/training akash
            
-           ls
-          # git status
+           
+           git status
           # git add master/src/com/training/First.java
           # git status
           # git diff
