@@ -1,5 +1,7 @@
 name: Clone and Push Repository
-
+env:
+  MAIN_REPO: https://${{secrets.USER_NAME}}:${{secrets.ACCESS_TOKEN}}@github.com/Shivamraghu1208/git-traning.git
+  MAIN_BRANCH: main
 on:
   [push]
 
