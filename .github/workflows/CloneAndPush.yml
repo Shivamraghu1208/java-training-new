@@ -26,7 +26,7 @@ jobs:
           git clone -b master  https://${{secrets.USER_NAME}}:${{secrets.ACCESS_TOKEN}}@github.com/Shivamraghu1208/testing.git master 
           echo "Hello"
 
-          ls
+            ls
             cp -r java-training-new master
            
            
