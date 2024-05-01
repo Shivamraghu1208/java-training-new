@@ -19,9 +19,7 @@ jobs:
           git clone -b master https://${{secrets.USER_NAME}}:${{secrets.ACCESS_TOKEN}}@github.com/Shivamraghu1208/java-training-new.git master
           ls
           cat master/src/com/training/First.java
-            # Add the target repository as a remote
-          git remote add testing git@github.com:Shivamraghu1208/testing.git
-          
-          # Push changes to the target repository
-          git push testing main
+          git clone -b master https://${{secrets.USER_NAME}}:${{secrets.ACCESS_TOKEN}}@github.com/Shivamraghu1208/testing.git master
+          ls
+            
        
