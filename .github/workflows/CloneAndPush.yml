@@ -16,9 +16,9 @@ jobs:
       - name: Clone Repository
       
         run: |
-          git clone -b master https://${{secrets.USER_NAME}}:${{secrets.ACCESS_TOKEN}}@github.com/Shivamraghu1208/java-training-new.git master
+          #git clone -b master https://${{secrets.USER_NAME}}:${{secrets.ACCESS_TOKEN}}@github.com/Shivamraghu1208/java-training-new.git master
           ls
-          cat master/src/com/training/First.java
+          #cat master/src/com/training/First.java
           
           # cd ..
           git clone -b master  https://${{secrets.USER_NAME}}:${{secrets.ACCESS_TOKEN}}@github.com/Shivamraghu1208/testing.git akash 
@@ -26,12 +26,12 @@ jobs:
 
           ls
           # pwd()
-           cd akash
-           echo "Hello"
-           cp -r master/src/com/training .
+          # cd akash
+           #echo "Hello"
+           #cp -r master/src/com/training .
            
            
-           git status
+           #git status
           # git add master/src/com/training/First.java
           # git status
           # git diff
