@@ -28,7 +28,7 @@ jobs:
             cp -r src/com/training akash
            
            
-           #git status
+           git status
           # git add master/src/com/training/First.java
           # git status
           # git diff
