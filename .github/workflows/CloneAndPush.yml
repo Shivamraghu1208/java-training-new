@@ -22,28 +22,30 @@ jobs:
           git clone -b ${MAIN_BRANCH} ${MAIN_REPO} ${MAIN_BRANCH}
 
 
-          ls master
+      - name: Copying Repository to new Repository
+
+        run: |
           rm -rf java-training-new/.git
           rm -rf java-training-new/.github
           rm -rf master/java-training-new
-          mv java-training-new master
-          echo "after copy paste file"
-          ls master
-          cd master
-          echo "before git status"
-          git status
-          echo "after git status"
-          git diff
-          git add java-training-new
-          echo "after adding java-training-new"
+          cp -Rf java-training-new master
+
+      - name: Setting Username and Email
+
+         run: |
           git config --global user.email "shivam.raghuwanshi@aurx.co"
           git config --global user.name "shivam"
-          echo "after adding config name"
+
+
+      - name: Add Comit and Push java-training-newin Testing
+
+          run: |
+          git add java-training-new
+          echo "after adding java-training-new"
           git commit -m "adding file javatrainingnew"
-          echo "after commit"
           git push origin master
-          git status
-          echo "after last line"
+
+
 
           
             
