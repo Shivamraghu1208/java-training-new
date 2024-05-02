@@ -1,6 +1,6 @@
 name: Clone and Push Repository
 env:
-  MAIN_REPO: https://${{secrets.USER_NAME}}:${{secrets.ACCESS_TOKEN}}@github.com/Shivamraghu1208/git-traning.git
+  MAIN_REPOSITORY: https://${{secrets.USER_NAME}}:${{secrets.ACCESS_TOKEN}}@github.com/Shivamraghu1208/testing.git
   MAIN_BRANCH: master
 on:
   [push]
@@ -8,22 +8,17 @@ on:
 jobs:
   clone_and_push:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
           path: java-training-new
-        
+
       - name: Clone Repository
-      
+
         run: |
-          #git clone -b master https://${{secrets.USER_NAME}}:${{secrets.ACCESS_TOKEN}}@github.com/Shivamraghu1208/java-training-new.git master
-          ls
-          #cat master/src/com/training/First.java
-          
-          # cd ..
-          git clone -b master  https://${{secrets.USER_NAME}}:${{secrets.ACCESS_TOKEN}}@github.com/Shivamraghu1208/testing.git master 
+          git clone -b ${MAIN_BRANCH}${MAIN_REPOSITORY} ${MAIN_BRANCH}
 
 
           ls master
@@ -31,7 +26,7 @@ jobs:
           rm -rf java-training-new/.github
           rm -rf master/java-training-new
           mv java-training-new master
-           
+
           ls master
           cd master
           git status
