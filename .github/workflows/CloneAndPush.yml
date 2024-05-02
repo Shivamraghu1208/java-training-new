@@ -32,14 +32,14 @@ jobs:
 
       - name: Setting Username and Email
 
-         run: |
+        run: |
           git config --global user.email "shivam.raghuwanshi@aurx.co"
           git config --global user.name "shivam"
 
 
       - name: Add Comit and Push java-training-newin Testing
 
-          run: |
+        run: |
           git add java-training-new
           echo "after adding java-training-new"
           git commit -m "adding file javatrainingnew"
