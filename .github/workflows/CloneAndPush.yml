@@ -19,7 +19,7 @@ jobs:
 
         run: |
           ls
-          git clone -b ${MAIN_BRANCH}${MAIN_REPO} ${MAIN_BRANCH}
+          git clone -b ${MAIN_BRANCH} ${MAIN_REPO} ${MAIN_BRANCH}
 
 
           ls master
