@@ -40,6 +40,8 @@ jobs:
       - name: Add Comit and Push java-training-newin Testing
 
         run: |
+          cd master
+          ls
           git add java-training-new
           echo "after adding java-training-new"
           git commit -m "adding file javatrainingnew"
