@@ -39,6 +39,7 @@ jobs:
           git commit -m "adding file javatrainingnew"
           git push origin master
           git status
+          echo "after last line"
 
           
             
