@@ -27,10 +27,12 @@ jobs:
           rm -rf java-training-new/.github
           rm -rf master/java-training-new
           mv java-training-new master
-
+          echo "after copy paste file"
           ls master
           cd master
+          echo "before git status"
           git status
+          echo "after git status"
           git add java-training-new
           git config --global user.email "shivam.raghuwanshi@aurx.co"
           git config --global user.name "shivam"
