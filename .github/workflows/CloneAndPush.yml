@@ -33,10 +33,14 @@ jobs:
           echo "before git status"
           git status
           echo "after git status"
+          git diff
           git add java-training-new
+          echo "after adding java-training-new"
           git config --global user.email "shivam.raghuwanshi@aurx.co"
           git config --global user.name "shivam"
+          echo "after adding config name"
           git commit -m "adding file javatrainingnew"
+          echo "after commit"
           git push origin master
           git status
           echo "after last line"
