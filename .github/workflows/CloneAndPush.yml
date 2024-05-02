@@ -19,7 +19,7 @@ jobs:
 
         run: |
           ls
-          git clone -b master  https://${{secrets.USER_NAME}}:${{secrets.ACCESS_TOKEN}}@github.com/Shivamraghu1208/testing.git master
+          git clone -b ${MAIN_BRANCH}${MAIN_REPO} ${MAIN_BRANCH}
 
 
           ls master
